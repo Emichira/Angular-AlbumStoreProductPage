@@ -7,8 +7,9 @@ import { ProductService } from '../product.service';
   styleUrls: ['./product-description.component.css']
 })
 export class ProductDescriptionComponent implements OnInit {
-  albumInfo;
+  albumInfo;   // class property
 
+  // Inject ProductService Into Product Description’s Constructor
   constructor(private _productService: ProductService) { }
 
   ngOnInit() {
